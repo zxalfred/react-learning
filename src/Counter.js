@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 const buttonStyle = {
   margin: '10px',
@@ -22,6 +22,19 @@ class Counter extends Component {
 
   onClickDecrementBtn() {
     this.setState({ count: this.state.count - 1});
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log('enter componentWillReceiveProps ' + this.props.caption);
+  }
+
+  componentDidMount() {
+    console.log(`enter componentWillMount ${this.props.caption}`);
+  }
+
+  shouldComponentUpdate(nextProps, nextStates) {
+    return (nextProps.caption !== this.props.caption) ||
+      (nextStates.count !== this.state.count);
   }
 
   render() {
