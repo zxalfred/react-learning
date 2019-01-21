@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ControlPanel from './ControlPanel';
+import ControlPanel from './views/ControlPanel';
 import * as serviceWorker from './serviceWorker';
 
 
