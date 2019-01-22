@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Counter from './Counter';
+import Counter from './Counter-divided';
 import Summary from './Summary';
 
 const style = {
