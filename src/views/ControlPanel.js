@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './Counter-divided';
-import Summary from './Summary';
+import Summary from './Summary-divided';
 
 const style = {
   margin: '20px',
